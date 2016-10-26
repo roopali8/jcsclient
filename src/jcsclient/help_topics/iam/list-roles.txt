@@ -1,0 +1,14 @@
+NAME:
+    list-roles
+
+
+DESCRIPTION:
+    Lists all roles of your JCS account.
+
+
+SYNOPSIS:
+    list-roles
+
+
+EXAMPLES:
+    jcs iam list-roles

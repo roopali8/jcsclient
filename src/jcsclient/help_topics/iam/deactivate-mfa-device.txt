@@ -1,0 +1,25 @@
+NAME:
+    deactivate-mfa-device
+
+
+DESCRIPTION:
+    Deactivate a virtual mfa device of your JCS account for the user.
+
+
+SYNOPSIS:
+    deactivate-mfa-device [--user-name <value>] [--user-id <value>]
+
+
+OPTIONS:
+    --user-name (string)
+    The user name of the user for which the mfa is deactivated.
+    This parameter is optional.
+
+    --user-id (string)
+    The user id of the user for which the mfa is deactivated.
+    This parameter is optional. Either of user-id or user-name is required
+
+
+EXAMPLES:
+    jcs iam deactivate-mfa-device --user-name user01
+    jcs iam deactivate-mfa-device --user-id 249821941294982

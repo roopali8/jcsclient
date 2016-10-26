@@ -1,0 +1,35 @@
+NAME:
+    attach-policy-to-role
+
+
+DESCRIPTION:
+    Attaches policy to role for your JCS account.
+
+
+SYNOPSIS:
+    attach-policy-to-role  [ --role-name <value>]  [ --policy-name <value>]  [ --role-id <value>]  [ --policy-id <value>]
+
+
+OPTIONS:
+    --role-name (string)
+    The name of the role the policy is attached to.
+    This parameter is optional.
+
+    --role-id (string)
+    The id of the role the policy is attached to.
+    This parameter is optional. Either of role-id or role-name is required
+
+    --policy-name(string)
+    The name of the policy needs to attached to role.
+    This parameter is optional.
+
+    --policy-id (string)
+    The id of the policy needs to attached to role.
+    This parameter is optional. Either of policy-id or policy-name is required
+
+
+EXAMPLES:
+    jcs iam attach-policy-to-role --role-name role111 --policy-name policy111
+    jcs iam attach-policy-to-role --role-id 102913813 --policy-name policy111
+    jcs iam attach-policy-to-role --role-name user2 --policy-id policy111
+    jcs iam attach-policy-to-role --role-id 102913813 --policy-id 10391232180

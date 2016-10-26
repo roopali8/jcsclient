@@ -1,0 +1,22 @@
+NAME:
+    create-role
+
+
+DESCRIPTION:
+    Creates a new role for your JCS account.
+
+
+SYNOPSIS:
+    create-role --name <value> --assume-role-policy-document <value>
+
+
+OPTIONS:
+    --name (string)
+    The name of the role to create.
+
+    --assume-role-policy-document (JSON)
+    The assume role policy document of the role.
+
+
+EXAMPLES:
+    jcs iam create-user --name user2 --assume-role-policy-document  {"statement":[{"effect":"allow","principal":{"jcs":["jrn:jcs:iam:665137897895"]},"action":["jrn:jcs:iam:AssumeRole"]}]}

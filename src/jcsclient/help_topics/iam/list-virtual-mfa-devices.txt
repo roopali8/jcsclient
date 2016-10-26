@@ -1,0 +1,21 @@
+NAME:
+    list-virtual-mfa-device
+
+
+DESCRIPTION:
+    Lists all virtual mfa devices for your JCS account matching the assignment status.
+
+
+SYNOPSIS:
+    list-virtual-mfa-device --assignment-status <value>
+
+
+OPTIONS:
+	--assignment-status (string)
+	The status of the mfa devices to list in your JCS account. Options for status are 'any', 'enabled' and 'disabled'.
+
+
+EXAMPLES:
+    jcs iam list-virtual-mfa-device --assignment-status any
+    jcs iam list-virtual-mfa-device --assignment-status enabled
+    jcs iam list-virtual-mfa-device --assignment-status disabled

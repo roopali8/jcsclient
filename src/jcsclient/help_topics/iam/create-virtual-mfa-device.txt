@@ -1,0 +1,19 @@
+NAME:
+    create-virtual-mfa-device
+
+
+DESCRIPTION:
+    Creates a new virtual mfa for your JCS account.
+
+
+SYNOPSIS:
+    create-virtual-mfa-device --name <value>
+
+
+OPTIONS:
+    --name (string)
+    The name of the mfa device to create.
+
+
+EXAMPLES:
+    jcs iam create-virtual-mfa-device --name mfa01

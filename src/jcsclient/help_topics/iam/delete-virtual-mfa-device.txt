@@ -1,0 +1,25 @@
+NAME:
+    delete-virtual-mfa-device
+
+
+DESCRIPTION:
+    Deletes a virtual mfa device for your JCS account.
+
+
+SYNOPSIS:
+    delete-virtual-mfa-device [--name <value>] [--id <value>]
+
+
+OPTIONS:
+    --name (string)
+    The name of the mfa to delete.
+    This parameter is optional.
+
+    --id (string)
+    The name of the mfa to delete.
+    This parameter is optional. Either of id or name is required.
+
+
+EXAMPLES:
+    jcs iam delete-virtual-mfa-device --name mfa01
+    jcs iam delete-virtual-mfa-device --id 249821941294982

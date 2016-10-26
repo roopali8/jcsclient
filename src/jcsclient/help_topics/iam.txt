@@ -64,5 +64,24 @@ AVAILABLE COMMANDS:
     detach-policy-from-resource
     get-resource-based-policy-summary
 
+    create-role
+    update-role
+    list-roles
+    delete-role
+    attach-policy-to-role
+    detach-policy-from-role
+    get-role-summary
+    assume-role
+    get-assumable-roles
+
+    create-virtual-mfa-device
+    enable-mfa-device
+    deactivate-mfa-device
+    delete-virtual-mfa-device
+    list-virtual-mfa-devices
+    resync-mfa-device
+    get-session-token
+
+
 To see detailed help for any command, type
     jcs iam <command> help

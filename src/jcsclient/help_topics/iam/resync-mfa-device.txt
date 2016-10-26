@@ -1,0 +1,42 @@
+NAME:
+    resync-mfa-device
+
+
+DESCRIPTION:
+    Resyncs the mfa devices for your JCS account.
+
+
+SYNOPSIS:
+    resync-mfa-device [--virtual-mfa-device-name <value>]  [--virtual-mfa-device-id <value>] [--user-name <value>] [--user-id <value>] --authentication-code1 <value> --authentication-code2  <value>
+
+
+OPTIONS:
+    --user-name (string)
+    The user name enabled for the mfa device that is resyncing.
+    This parameter is optional.
+
+    --user-id (string)
+    The user id enabled for the mfa device that is resyncing.
+    This parameter is optional. Either of user-id or user-name is required
+
+    --virtual-mfa-device-name (string)
+    The name of the mfa virtual device to resync.
+    This parameter is optional.
+
+    --virtual-mfa-device-id (string)
+    The id of the mfa virtual device to resync.
+    This parameter is optional. Either of virtual-mfa-device-name or virtual-mfa-device-id is required
+
+    --authentication-code1
+    The 1st authentication code validating the mfa device.
+
+    --authentication-code2
+    The authentication code appearing next to the 1st code validating the mfa device.
+
+
+
+EXAMPLES:
+    jcs iam resync-mfa-device --virtual-mfa-device-id 1093001111 --user-name user01 --authentication-code1 2034 --authentication-code2 1298
+    jcs iam resync-mfa-device --virtual-mfa-device-name mfa01 --user-name user01 --authentication-code1 2034 --authentication-code2 1298
+    jcs iam resync-mfa-device --virtual-mfa-device-id 1093001111 --user-id 701010011131 --authentication-code 2034 --authentication-code2 1298
+    jcs iam resync-mfa-device --virtual-mfa-device-name mfa01 --user-id 123987129837 --authentication-code1 2034 --authentication-code2 1298

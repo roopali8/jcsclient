@@ -1,0 +1,25 @@
+NAME:
+    delete-role
+
+
+DESCRIPTION:
+    Deletes the role of your JCS account.
+
+
+SYNOPSIS:
+    delete-role [ --id <value>]  [--name <value>]
+
+
+OPTIONS:
+    --id (string)
+    The id of the role to delete.
+    This parameter is optional.
+
+    --name (string)
+    The name of the role to delete.
+    This parameter is optional. Either of id or name is required
+
+
+EXAMPLES:
+    jcs iam delete-role --id 10011111100111
+    jcs iam delete-role --name role111

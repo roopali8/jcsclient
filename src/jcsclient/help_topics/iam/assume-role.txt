@@ -1,0 +1,31 @@
+NAME:
+    assume-role
+
+
+DESCRIPTION:
+    Assumes the role and returns temporary credentials for the assumed role user.
+
+
+SYNOPSIS:
+    assume-role [--role-name <value>]  [--role-id <value>]  --account-id <value>  --duration-seconds <value>
+
+
+OPTIONS:
+    --role-name (string)
+    The name of the role the user wants to assume.
+    This parameter is optional.
+
+    --role-id (string)
+    The id of the role the user wants to assume.
+    This parameter is optional. Either of role-id or role-name is required.
+
+    --account-id (string)
+    The account id the role belongs to.
+
+    --duration-seconds (positive integer)
+    The duration (seconds) for which the temporary credentials are valid for.
+
+
+EXAMPLES:
+    jcs iam assume-user --role-name user2  --account 101101198273  --duration-seconds 60
+    jcs iam assume-user --role-id  1012321830281309  --account 101101198273  --duration-seconds 60

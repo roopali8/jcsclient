@@ -1,0 +1,35 @@
+NAME:
+    detach-policy-from-role
+
+
+DESCRIPTION:
+    Detached policy from role for your JCS account.
+
+
+SYNOPSIS:
+    detach-policy-from-role  [ --role-name <value>]  [ --policy-name <value>]  [ --role-id <value>]  [ --policy-id <value>]
+
+
+OPTIONS:
+    --role-name (string)
+    The name of the role the policy is detached to.
+    This parameter is optional.
+
+    --role-id (string)
+    The id of the role the policy is detached to.
+    This parameter is optional. Either of role-id or role-name is required.
+
+    --policy-name(string)
+    The name of the policy needs to detached to role.
+    This parameter is optional.
+
+    --policy-id (string)
+    The id of the policy needs to detached to role.
+    This parameter is optional. Either of policy-id or policy-name is required.
+
+
+EXAMPLES:
+    jcs iam detach-policy-from-role --role-name role111 --policy-name policy111
+    jcs iam detach-policy-from-role --role-id 102913813 --policy-name policy111
+    jcs iam detach-policy-from-role --role-name role111 --policy-id 10391232180
+    jcs iam detach-policy-from-role --role-id 102913813 --policy-id 10391232180

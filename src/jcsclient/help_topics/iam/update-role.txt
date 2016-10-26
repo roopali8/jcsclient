@@ -1,0 +1,28 @@
+NAME:
+    update-role
+
+
+DESCRIPTION:
+    Updates a role for your JCS account.
+
+
+SYNOPSIS:
+    update-role [--name <value>]  [--id <value>]  --assume-role-policy-document <value>
+
+
+OPTIONS:
+    --name (string)
+    The name of the role to update.
+    This parameter is optional.
+
+    --id (string)
+    The id of the role to update
+    This parameter is optional. Either of id or name is required
+
+    --assume-role-policy-document (string)
+    The assume role policy document of the role.
+
+
+EXAMPLES:
+    jcs iam update-user --name user2 --assume-role-policy-document {"statement":[{"effect”:”deny”,”principal":{"jcs":["jrn:jcs:iam:665137897895"]},"action":["jrn:jcs:iam:AssumeRole"]}]}
+    jcs iam update-user --id 10001111911 --assume-role-policy-document {"statement":[{"effect”:”deny”,”principal":{"jcs":["jrn:jcs:iam:665137897895"]},"action":["jrn:jcs:iam:AssumeRole"]}]}

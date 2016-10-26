@@ -1,0 +1,25 @@
+NAME:
+	get-session-token
+
+
+DESCRIPTION:
+    Gets temporary session token for user of your JCS account.
+
+
+SYNOPSIS:
+	get-session-token --name <value>  --token-code <value>  --duration-seconds <value>
+
+
+OPTIONS:
+	--name (string)
+	The name of the mfa virtual device to resync.
+
+	--token-code (string)
+    The 1st authentication code validating the mfa device.
+
+	--duration-seconds (positive integer)
+	Duration in seconds for which the session token is valid.
+
+
+EXAMPLES:
+	jcs iam get-session-token --name mfa01  --token-code 1234  --duration-seconds 120

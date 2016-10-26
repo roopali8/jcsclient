@@ -1,0 +1,25 @@
+NAME:
+    get-role-summary
+
+
+DESCRIPTION:
+    Gets summary of the role for your JCS account.
+
+
+SYNOPSIS:
+   get-role-summary [--name <value>]  [--id <value>]
+
+
+OPTIONS:
+    --name (string)
+    The name of the role the summary is need for.
+    This parameter is optional.
+
+    --id (string)
+    The id of the role the summary is need for.
+    This parameter is optional. Either of id or name is required.
+
+
+EXAMPLES:
+    jcs iam  get-role-summary --name role001
+    jcs iam  get-role-summary --id 10293819

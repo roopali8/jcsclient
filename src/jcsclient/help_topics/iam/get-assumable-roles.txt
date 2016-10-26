@@ -1,0 +1,14 @@
+NAME:
+    get-assumable-roles
+
+
+DESCRIPTION:
+    Gets all the role which can be assumed by the user across all accounts.
+
+
+SYNOPSIS:
+    get-assumable-roles
+
+
+EXAMPLES:
+    jcs iam get-assumable-roles
